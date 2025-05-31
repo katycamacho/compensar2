@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: "Akaya Kanadaka", serif;
+    background-color:#89e219;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color:#b1eb6b;
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    padding: 100px 0;
+
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #89e219;
+    font-size: 70px;
+    font-weight: 1000;
+    text-transform: uppercase;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: black;
+    display: block;
+    font-weight: 600;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: darksalmon;
+    padding: 100px;
+    min-width: 100px;
+}
+
+table{
+    width: 100%;
+}
+
+th, td {
+    color: aliceblue;
+}
+
+.borrar {
+    background-color: coral;
+    border-radius: 50%;
+    padding:  5px 10px;
+    color: aliceblue;
+    font-weight: 800;
+}
+
+.header-content {
+    display: flex;
+}
+
+.header-txt {
+    flex-basis: 50%;
+}
+
+.header-txt span {
+    font-size: 16px;
+    color: black;
+    font-weight: 700;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.header-txt h1{
+    font-size: 70px;
+    line-height: 1;
+    color: #333128;
+    margin-bottom: 10%;
+
+}
+
+p{
+    font-size: 16px;
+    color: black;
+    margin-bottom: 45%;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 50 px 60px;
+    color: rgb(37, 7, 22);
+    border-radius: 40px;
+    background-color:#58cc02; 
+    text-transform: capitalize;
+}
+
+.header-img {
+    flex-basis: 70%;
+    text-align: center;
+    float: inherit;
+    margin-right: 30px;
+}
+
+.header-img img {
+    width: 400px;
+    float: inherit;
+    margin-right: 10px;
+}
+
+.information {
+    width: 70%;
+    box-shadow: 0 0 20px #58cc02;
+    padding: 25px 75px;
+    margin-top: -75px;
+    background-color: #58cc02;
+}
+
+.information-content {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.information-1 img {
+    width: 35px;
+}
+
+h3 {
+    font-size: 17px;
+    color: rgb(37, 7, 22);
+    text-transform: capitalize;
+}
+
+.information-1 p {
+    margin-bottom: 0;
+}
+
+.peliculas{
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.peli-1{
+    text-align: center;
+    flex-basis: calc(25% -  20px);
+    box-shadow: 0 0 20px#58cc02;
+    padding: 35px;
+}
+
+.peli-1 img {
+    width: 140px;
+    margin-bottom: 10px;
+}
+
+.peli-1 p{
+    font-size: 15px;
+    margin: 0;
+    font-weight: 600;
+    color: rgb(37, 7, 22);
+}
+
+.productos{
+    padding:  0 0 100% 0;
+    text-align: center;
+
+}
+
+.productos h2{
+    font-size: 40px;
+    color: rgb(37, 7, 22);
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+
+
+.productos-contend{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.productos img {
+    width: 310px;
+    height: 304px;
+    margin-bottom: 10px;
+}
+
+.productos h3{
+    color: rgb(37, 7, 22);
+}
+
+.productos p{
+    font-size: 15px;
+    margin: 0;
+    color: #333128;
+    font-weight: 600;
+}
+
+.btn-2{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 7px 15px;
+    border-radius:5px ;
+    color:rgb(37, 7, 22);
+    background-color: #58cc02;
+}
+
+.service{
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-1{
+    flex-basis: 20%;
+    margin: 20px;
+    padding: 30x;
+    background-color: #89e219;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.store{
+    width: 200px;
+    height: 150px;
+}
+
+.service-2 {
+    padding: 30px;
+    background-color: #89e219;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-3 {
+    padding: 30px;
+    background-color: #89e219;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact{
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+}
+
+input{
+    padding: 17px 35px;
+    border-radius: 25px;
+    border: 1px salmon;
+    outline: none;
+}
+
+.btn-3{
+    margin-left: 10px;
+    color: rgb(37, 7, 22);
+    background-color: #89e219;
+}
+
+.footer{
+    padding: 50px 0;
+    background-color: #89e219;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3{
+    color: black;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.link a{
+    color: black;
+    font-size: 15px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.link a:hover{
+    color: black;
+
+}
+
+@media(max-width:991px) {
+    .menu{
+        padding: 30px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #58cc02;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    .menu .navbar ul li a {
+        color: rgb(37, 7, 22);
+    }
+    
+    .logo {
+        display: none;
+    }
+
+    #menu:checked .navbar{
+        display: initial;
+    }
+
+    #submenu:hover #carrito{
+        min-width: 340px;
+    }
+    
+    .header {
+        min-height: 0;
+        padding: 100px 3 px ;
+    }
+
+    .header-content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-txt{
+        margin-bottom: 20px;
+    }
+
+    .header-img img {
+        width: 300px;
+    }
+
+    .information{
+        display: none;
+    }
+
+    .peliculas{
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .peli-1{
+        margin-bottom: 25px;
+    }
+
+    .productos{
+        padding: 30px;
+    }
+
+    .productos-contend{
+        grid-template-columns: repeat(1, 1fr );
+    }
+
+    .service {
+        flex-direction: column;
+    }
+
+    .footer{
+        padding: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+    
